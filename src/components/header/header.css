@@ -1,0 +1,151 @@
+.header-desktop {
+  display: none;
+}
+
+
+
+.header-mobile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1rem;
+  color: white;
+  height: 60px;
+  position: fixed;
+  background-color: transparent;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  transition: 0.32s ease-in-out;
+
+
+}
+
+.header-mobile svg{
+  padding-left: 8vw;
+  padding-right: 8vw;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+@media (min-width: 640px) {
+  .header-mobile {
+    display: none;
+  }
+
+  .header-desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: white;
+    height: 60px;
+    position: fixed;
+    background-color: transparent;
+    top: 0;
+    width: 100vw;
+    z-index: 9999;
+    transition: 0.32s ease-in-out;
+    
+  }
+
+  .header-desktop b {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    margin-left: 3vw;
+  }
+
+  .right-section-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5vw;
+  }
+
+  .right-section-header .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .right-section-header .menu a {
+    margin: 3vw;
+  }
+
+  .right-section-header .socials {
+    display: flex;
+    gap: 3vw;
+  }
+
+  .right-section-header .socials a {
+    border: 1px solid white;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    transition: 0.25s ease-out;
+  }
+
+  .right-section-header .socials a svg {
+    position: relative;
+    top: 10px;
+    height: 20px;
+    width: 20px;
+  }
+
+  .right-section-header .socials a:hover {
+    background-color: white;
+  }
+
+  .right-section-header .socials a:hover svg {
+    color: black;
+  }
+
+  .right-section-header button {
+    font-weight: 500;
+    color: #fff;
+    border: 1px solid white;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+    padding: 1vh 1vw;
+    margin-left: 18px;
+    position: relative;
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
+    background: linear-gradient(to left, black 50%, white 50%) right;
+    background-size: 200%;
+    transition: 0.5s ease-out;
+    margin-right: 3vw;
+    cursor: pointer;
+  }
+
+  .right-section-header button:hover {
+    background-position: left;
+    color: black;
+  }
+}

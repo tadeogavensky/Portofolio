@@ -1,0 +1,151 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+.main {
+  padding-top: 4vh;
+  padding-bottom: 12vh;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  color: white;
+  background-image: url("../../assets/img/banner-bg.png");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tagline {
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px;
+  background: linear-gradient(
+    90.21deg,
+    rgba(170, 54, 124, 0.5) -5.91%,
+    rgba(74, 47, 189, 0.5) 111.58%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  width: 95%;
+  margin-top: 5vh;
+}
+
+.main .presentation {
+  flex-direction: column;
+  text-align: left;
+  display: flex;
+}
+
+.main .presentation h1 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 5vh;
+  display: block;
+  text-overflow: ellipsis;
+  height: 80px;
+}
+
+.main .presentation p {
+  color: #b8b8b8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  width: 96%;
+}
+
+.txt-rotate > .wrap {
+  border-right: 0.08em solid white;
+}
+.presentation button {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  background-color: transparent;
+  border: none;
+}
+.presentation button svg {
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  position: relative;
+  top: 3px;
+}
+.presentation button:hover svg {
+  margin-left: 25px;
+}
+.presentation img {
+  animation: updown 3s linear infinite;
+}
+@keyframes updown {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+.txt-rotate > .wrap {
+  border-right: 0.08em solid #666;
+}
+
+.main .image-mobile img {
+  width: 100%;
+  margin-top: 5vh;
+}
+
+.main .image-desktop {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .main {
+    display: flex;
+    align-items: center;
+  }
+  .main .image-desktop {
+    display: block;
+    width: 90%;
+  }
+
+  .main .image-desktop img {
+    width: 90%;
+  }
+
+  .main .image-mobile {
+    display: none;
+  }
+
+  .tagline {
+    width: 50%;
+    margin-top: 20vh;
+  }
+
+  .main .presentation h1 {
+    font-size: 50px;
+  }
+
+  .main .image {
+    display: block;
+    width: 50%;
+  }
+
+  .main .presentation {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 75%;
+  }
+
+  .main .presentation button {
+    display: block;
+    width: 60%;
+    padding-right: 2vw;
+    text-align: left;
+    margin-top: 4vh;
+  }
+}

@@ -1,0 +1,73 @@
+#projects {
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  padding-left: 5vw;
+  padding-right: 4vw;
+  margin-left: 8vw;
+  margin-right: 8vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 4vh;
+  background: #151515;
+  color: white;
+  border-radius: 64px;
+  margin-bottom: 5vh;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.project {
+  width: 300px;
+  height: 200px;
+ background: url('../../assets/img/blob.svg');
+  border-radius: 30px;
+  position: relative;
+}
+
+.project::before{
+  content: "";
+  background: linear-gradient(23.21deg, #001220 -5.91%, #d23f89 111.58%);
+  opacity: 0.85;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  border-radius: 30px;
+
+  transition: 0.4s ease-in-out;
+  left: 0;
+}
+
+.repository{
+  display: none;
+}
+
+.project:hover::before {
+  height: 100%;
+}
+
+.project:hover .repository {
+  display: block;
+  transition: 0.4s ease-in-out;
+  z-index: 2;
+  position: relative;
+}
+
+.project:hover .repository {
+  display: block;
+  transition: 0.4s ease-in-out;
+  z-index: 2;
+  position: relative;
+}
+
+@media (min-width: 640px) {
+  #projects{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+}

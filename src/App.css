@@ -1,5 +1,11 @@
+
 .App {
   text-align: center;
+  background: url('./assets/img/blob-scene-haikei.svg') right bottom no-repeat, url('./assets/img/banner-bg.png') left top repeat;
+  background-position: left top, center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .App-logo {
