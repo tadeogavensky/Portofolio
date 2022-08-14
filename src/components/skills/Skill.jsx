@@ -9,7 +9,7 @@ export const Skill = (props) => {
     <>
       <div className="item">
         <div className="circle">
-          <p>{props.percentage}%</p>
+          <p>{props.percentage} years </p>
         </div>
         <h5>{props.skill}</h5>
       </div>

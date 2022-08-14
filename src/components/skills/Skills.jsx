@@ -41,7 +41,7 @@ export const Skills = () => {
   return (
     <div id="skills">
       <h1>Skills</h1>
-
+      {/* <h1 style={{paddingBottom:10}}>Years of expierence</h1> */}
       <Carousel
         responsive={responsive}
         infinite={true}
@@ -52,12 +52,12 @@ export const Skills = () => {
         customTransition="transform 1000ms ease-in-out"
         removeArrowOnDeviceType={["tablet", "mobile"]}
       >
-        <Skill percentage={75} meter={meter1} skill={"Node.js"} />
-        <Skill percentage={85} meter={meter1} skill={"HTML"} />
-        <Skill percentage={80} meter={meter1} skill={"CSS"} />
-        <Skill percentage={60} meter={meter1} skill={"React.js"} />
-        <Skill percentage={85} meter={meter1} skill={"MySQL"} />
-        <Skill percentage={40} meter={meter1} skill={"JAVA"} />
+        <Skill percentage={2} meter={meter1} skill={"Node.js"} />
+        <Skill percentage={3} meter={meter1} skill={"HTML"} />
+        <Skill percentage={3} meter={meter1} skill={"CSS"} />
+        <Skill percentage={1} meter={meter1} skill={"React.js"} />
+        <Skill percentage={4} meter={meter1} skill={"MySQL"} />
+        <Skill percentage={1} meter={meter1} skill={"JAVA"} />
       </Carousel>
     </div>
   );
