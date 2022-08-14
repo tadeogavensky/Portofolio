@@ -13,8 +13,8 @@ export const Main = () => {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
   const toRotate = [
-    "Full Stack Developer",
-    "Cerified Tech Developer",
+    "Full Stack Dev",
+    "Certified Tech Dev",
     "Marketing student",
   ];
   const period = 2000;
@@ -62,11 +62,12 @@ export const Main = () => {
         <h3 className="tagline">This is my Portofolio</h3>
 
         <h1>
-          {`Shalom! I'm Tadeo`} <br />
+          {`Hi human!👨‍🚀🚀 `} <br />
           <span
             className="txt-rotate"
             dataPeriod="1000"
             data-rotate='"Full Stack Developer", "Data Analyst", "Marketing student" '
+            style={{ color: "#9400ff" }}
           >
             <span className="wrap">{text}</span>
           </span>
@@ -75,10 +76,12 @@ export const Main = () => {
           <img src={headerImg} alt="Header Img" />
         </div>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
-          praesentium, quo eius, quasi qui porro molestiae labore ullam,
-          provident ipsam impedit deleniti est eaque animi cum voluptatem ab
-          minus dolor.
+          Hi, I’m Tadeo! A young Software Developer who is thrilled about
+          everything that comes with programming and technology. I love backend
+          as much as frontend, both have the best of worlds, creating a huge
+          structure of code that the user won’t be able to see but will much
+          appreciate, and building nice and minimalist sites that make the user
+          feel comfortable navigating the frontend side.
         </p>
 
         <button>

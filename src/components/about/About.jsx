@@ -41,11 +41,13 @@ export const About = () => {
         customTransition="transform 1000ms ease-in-out"
         removeArrowOnDeviceType={["tablet", "mobile"]}
       >
-        <AboutCard image={dh} title={"Digital House CTD"} year={"2022-2024"} />
-        <AboutCard image={al} title={"Node acceleration"} year={"2022"} />
-        <AboutCard image={up} title={"Marketing degree"} year={"2022-2027"} />
-        <AboutCard image={ef} title={"C1 Degree"} year={"2019"} />
-        <AboutCard image={ort} title={"Senior high"} year={"2014-2019"} />
+        <AboutCard file={"https://www.digitalhouse.com/ar/productos/programacion/certified-tech-developer"} image={dh} title={"CTD Career"} year={"2022-2024"} />
+        <AboutCard file={"../../assets/fullstack.pdf"} image={dh} title={"Full Stack Course"} year={"2021-2022"} />
+        <AboutCard file={"https://www.efset.org/cert/6w6uTJ"} image={ef} title={"EF SET C2-Proficient Degree"} year={"2022"} />
+        <AboutCard file={"https://assets.alkemy.org/certificates/auth0%7C61fa950fcc6dfb006c5ef2ad/e0bcbe79-8b4b-4040-b74e-559bced4e655.pdf"} image={al} title={"Node acceleration"} year={"2022"} />
+        <AboutCard file={"https://www.palermo.edu/carreras/marketing-modalidad-online/?gclid=Cj0KCQjwuuKXBhCRARIsAC-gM0jOWlKTqjHGKw4VgD7xrVIbfxkTlsj0cwcU1Y5lP8EdCln-N8rychsaAkuGEALw_wcB"} image={up} title={"Marketing degree"} year={"2022-2027"} />
+        <AboutCard file={"../../assets/EF C1.pdf"} image={ef} title={"C1 Degree"} year={"2019"} />
+        <AboutCard file={"https://media-exp1.licdn.com/dms/document/C4E2DAQHVdLF0mfRFgA/profile-treasury-document-pdf-analyzed/0/1612204274367?e=1661385600&v=beta&t=-Nsg94EkTqiN3C_3xFry6Hiv9hgMjzh6bfhZiNvWvOM"} image={ort} title={"Senior high"} year={"2014-2019"} />
       </Carousel>
     </div>
   );

@@ -50,6 +50,8 @@
 
 @media (min-width: 640px) {
   #about{
+    margin-left: 7vw;
+    margin-right: 7vw;
     padding-top: 10vh;
     padding-bottom: 10vh;
   }

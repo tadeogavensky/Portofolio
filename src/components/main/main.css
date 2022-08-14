@@ -34,14 +34,14 @@
 }
 
 .main .presentation h1 {
-  font-size: 40px;
+  font-size: 60px;
   font-weight: 700;
-  letter-spacing: 0.8px;
-  line-height: 1;
-  margin-bottom: 5vh;
+  letter-spacing: 0.5px;
+
+  padding-bottom: 4vh;
   display: block;
   text-overflow: ellipsis;
-  height: 80px;
+  height: 100px;
 }
 
 .main .presentation p {
@@ -107,6 +107,10 @@
     display: flex;
     align-items: center;
   }
+
+  .main h1{
+    font-size: 35px;
+  }
   .main .image-desktop {
     display: block;
     width: 90%;
@@ -126,7 +130,7 @@
   }
 
   .main .presentation h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .main .image {
