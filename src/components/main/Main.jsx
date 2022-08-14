@@ -67,7 +67,7 @@ export const Main = () => {
             className="txt-rotate"
             dataPeriod="1000"
             data-rotate='"Full Stack Developer", "Data Analyst", "Marketing student" '
-            style={{ color: "#9400ff" }}
+            
           >
             <span className="wrap">{text}</span>
           </span>

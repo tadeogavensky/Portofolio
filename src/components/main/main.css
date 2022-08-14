@@ -34,7 +34,7 @@
 }
 
 .main .presentation h1 {
-  font-size: 60px;
+  font-size: 65px;
   font-weight: 700;
   letter-spacing: 0.5px;
 
@@ -42,6 +42,8 @@
   display: block;
   text-overflow: ellipsis;
   height: 100px;
+  z-index: 43;
+  color: white;
 }
 
 .main .presentation p {
@@ -95,7 +97,8 @@
 
 .main .image-mobile img {
   width: 100%;
-  margin-top: 5vh;
+  margin-top: 20vh;
+  z-index: -1;
 }
 
 .main .image-desktop {
@@ -110,6 +113,7 @@
 
   .main h1{
     font-size: 35px;
+    color: #9400ff;
   }
   .main .image-desktop {
     display: block;
